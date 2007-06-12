@@ -1,0 +1,145 @@
+ruby-sqlite3
+-------------------------------------------
+This module allows Ruby programs to interface with the SQLite3 database 
+engine (www.sqlite.org). You must have the SQLite engine installed in 
+order to build this module.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libsqlite3_0-3.3.12-1
+  ruby-1.8.6-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.3.1-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+  ruby-1.8.6-1
+
+Canonical homepage:
+  http://sqlite-ruby.rubyforge.org/
+
+Canonical download:
+  http://rubyforge.org/frs/?group_id=254
+
+-------------------------------------------
+
+Build instructions:
+  unpack ruby-sqlite3-1.2.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ruby-sqlite3-1.2.1-1.cygport all
+
+This will create:
+  /usr/src/ruby-sqlite3-1.2.1-1-src.tar.bz2
+  /usr/src/ruby-sqlite3-1.2.1-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/sqlite3_api.so
+  /usr/lib/ruby/site_ruby/1.8/sqlite3.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/constants.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/database.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/driver/dl/api.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/driver/dl/driver.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/driver/native/driver.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/errors.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/pragmas.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/resultset.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/statement.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/translator.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/value.rb
+  /usr/lib/ruby/site_ruby/1.8/sqlite3/version.rb
+  /usr/share/doc/Cygwin/ruby-sqlite3-1.2.1.README
+  /usr/share/doc/ruby-sqlite3-1.2.1/ChangeLog
+  /usr/share/doc/ruby-sqlite3-1.2.1/LICENSE
+  /usr/share/doc/ruby-sqlite3-1.2.1/README
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/DL.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/DL/PtrData.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/Kernel.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/AbortException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/AuthorizationException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Blob.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/BusyException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/CantOpenException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/ColumnType.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/ErrorCode.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/TextRep.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ConstraintException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/CorruptException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Database.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Database/FunctionProxy.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL/API.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL/Driver.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/Native.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/Native/Driver.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/EmptyException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Error.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Exception.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/FormatException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/FullException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/IOException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/InternalException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/InterruptException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/LockedException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MemoryException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MismatchException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MisuseException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/NotADatabaseException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/NotFoundException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/PermissionException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Pragmas.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ProtocolException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/RangeException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ReadOnlyException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet/FieldsContainer.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet/TypesContainer.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/SQLException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/SchemaChangedException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Statement.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/TooBigException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Translator.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/UnsupportedException.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Value.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Version.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/String.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/created.rid
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/constants_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/database_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/dl/api_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/dl/driver_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/native/driver_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/errors_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/pragmas_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/resultset_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/statement_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/translator_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/value_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/version_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3_rb.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_class_index.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_file_index.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_method_index.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/index.html
+  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/rdoc-style.css
+
+------------------
+
+Port Notes:
+
+----- version 1.2.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
