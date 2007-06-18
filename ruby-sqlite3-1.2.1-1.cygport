@@ -5,6 +5,8 @@ HOMEPAGE="http://sqlite-ruby.rubyforge.org/"
 SRC_URI="mirror://rubyforge/sqlite-ruby/sqlite3-ruby-${PV}.tar.bz2"
 SRC_DIR="sqlite3-ruby-${PV}"
 
+DIFF_EXCLUDES="Makefile"
+
 src_install() {
 	cd ${B}
 	ruby_install
