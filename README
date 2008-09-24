@@ -5,18 +5,16 @@ engine (www.sqlite.org). You must have the SQLite engine installed in
 order to build this module.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libsqlite3_0-3.3.12-1
-  ruby-1.8.6-1
+  cygwin-1.5.25-15
+  libsqlite3_0-3.5.9-1
+  ruby-1.8.7_p72-2
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
-  binutils-20060817-1
-  cygport-0.3.1-1
+  binutils-20080624-2
+  cygport-0.4.1-1
   gcc-core-3.4.4-3
   make-3.81-1
-  ruby-1.8.6-1
 
 Canonical homepage:
   http://sqlite-ruby.rubyforge.org/
@@ -27,15 +25,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack ruby-sqlite3-1.2.1-1-src.tar.bz2
+  unpack ruby-sqlite3-1.2.4-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./ruby-sqlite3-1.2.1-1.cygport all
+  cygport ./ruby-sqlite3-1.2.4-1.cygport all
 
 This will create:
-  /usr/src/ruby-sqlite3-1.2.1-1-src.tar.bz2
-  /usr/src/ruby-sqlite3-1.2.1-1.tar.bz2
+  /usr/src/ruby-sqlite3-1.2.4-1-src.tar.bz2
+  /usr/src/ruby-sqlite3-1.2.4-1.tar.bz2
 
 -------------------------------------------
 
@@ -55,87 +53,206 @@ Files included in the binary package:
   /usr/lib/ruby/site_ruby/1.8/sqlite3/translator.rb
   /usr/lib/ruby/site_ruby/1.8/sqlite3/value.rb
   /usr/lib/ruby/site_ruby/1.8/sqlite3/version.rb
-  /usr/share/doc/Cygwin/ruby-sqlite3-1.2.1.README
-  /usr/share/doc/ruby-sqlite3-1.2.1/ChangeLog
-  /usr/share/doc/ruby-sqlite3-1.2.1/LICENSE
-  /usr/share/doc/ruby-sqlite3-1.2.1/README
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/DL.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/DL/PtrData.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/Kernel.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/AbortException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/AuthorizationException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Blob.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/BusyException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/CantOpenException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/ColumnType.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/ErrorCode.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Constants/TextRep.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ConstraintException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/CorruptException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Database.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Database/FunctionProxy.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL/API.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/DL/Driver.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/Native.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Driver/Native/Driver.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/EmptyException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Error.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Exception.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/FormatException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/FullException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/IOException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/InternalException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/InterruptException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/LockedException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MemoryException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MismatchException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/MisuseException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/NotADatabaseException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/NotFoundException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/PermissionException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Pragmas.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ProtocolException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/RangeException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ReadOnlyException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet/FieldsContainer.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/ResultSet/TypesContainer.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/SQLException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/SchemaChangedException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Statement.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/TooBigException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Translator.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/UnsupportedException.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Value.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/SQLite3/Version.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/classes/String.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/created.rid
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/constants_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/database_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/dl/api_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/dl/driver_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/driver/native/driver_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/errors_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/pragmas_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/resultset_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/statement_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/translator_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/value_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3/version_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/files/lib/sqlite3_rb.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_class_index.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_file_index.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/fr_method_index.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/index.html
-  /usr/share/doc/ruby-sqlite3-1.2.1/rdoc/rdoc-style.css
+  /usr/share/doc/ruby-sqlite3-1.2.4/LICENSE
+  /usr/share/ri/1.8/site/SQLite3/AbortException/cdesc-AbortException.yaml
+  /usr/share/ri/1.8/site/SQLite3/AuthorizationException/cdesc-AuthorizationException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Blob/cdesc-Blob.yaml
+  /usr/share/ri/1.8/site/SQLite3/BusyException/cdesc-BusyException.yaml
+  /usr/share/ri/1.8/site/SQLite3/CantOpenException/cdesc-CantOpenException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Constants/ColumnType/cdesc-ColumnType.yaml
+  /usr/share/ri/1.8/site/SQLite3/Constants/ErrorCode/cdesc-ErrorCode.yaml
+  /usr/share/ri/1.8/site/SQLite3/Constants/TextRep/cdesc-TextRep.yaml
+  /usr/share/ri/1.8/site/SQLite3/Constants/cdesc-Constants.yaml
+  /usr/share/ri/1.8/site/SQLite3/ConstraintException/cdesc-ConstraintException.yaml
+  /usr/share/ri/1.8/site/SQLite3/CorruptException/cdesc-CorruptException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/AggregateDefinitionProxy/cdesc-AggregateDefinitionProxy.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/%5b%5d%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/%5b%5d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/cdesc-FunctionProxy.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/count-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/result%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/set_error-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/FunctionProxy/set_result-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/authorizer-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/busy_handler-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/busy_timeout-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/cdesc-Database.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/changes-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/close-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/closed%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/commit-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/complete%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/create_aggregate-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/create_aggregate_handler-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/create_function-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/errcode-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/errmsg-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/execute-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/execute2-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/execute_batch-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/get_first_row-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/get_first_value-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/interrupt-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/last_insert_row_id-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/prepare-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/query-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/quote-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/rollback-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/total_changes-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/trace-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/transaction-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/transaction_active%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Database/translator-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/API/cdesc-API.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/aggregate_context-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/api_delegate-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/bind_blob-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/bind_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/busy_handler-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/cdesc-Driver.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/column_blob-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/column_decltype-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/column_name-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/column_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/commit_hook-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/complete%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/create_function-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/errmsg-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/open-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/prepare-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/progress_handler-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/result_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/set_authorizer-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/trace-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/value_blob-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/Driver/value_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/DL/cdesc-DL.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/api_delegate-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/bind_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/busy_handler-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/cdesc-Driver.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/column_decltype-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/column_name-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/column_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/complete%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/create_function-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/errmsg-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/open-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/prepare-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/result_error-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/result_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/set_authorizer-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/trace-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/Driver/value_text-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/Native/cdesc-Native.yaml
+  /usr/share/ri/1.8/site/SQLite3/Driver/cdesc-Driver.yaml
+  /usr/share/ri/1.8/site/SQLite3/EmptyException/cdesc-EmptyException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Error/cdesc-Error.yaml
+  /usr/share/ri/1.8/site/SQLite3/Error/check-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Exception/cdesc-Exception.yaml
+  /usr/share/ri/1.8/site/SQLite3/Exception/code-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Exception/code-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/FormatException/cdesc-FormatException.yaml
+  /usr/share/ri/1.8/site/SQLite3/FullException/cdesc-FullException.yaml
+  /usr/share/ri/1.8/site/SQLite3/IOException/cdesc-IOException.yaml
+  /usr/share/ri/1.8/site/SQLite3/InternalException/cdesc-InternalException.yaml
+  /usr/share/ri/1.8/site/SQLite3/InterruptException/cdesc-InterruptException.yaml
+  /usr/share/ri/1.8/site/SQLite3/LockedException/cdesc-LockedException.yaml
+  /usr/share/ri/1.8/site/SQLite3/MemoryException/cdesc-MemoryException.yaml
+  /usr/share/ri/1.8/site/SQLite3/MismatchException/cdesc-MismatchException.yaml
+  /usr/share/ri/1.8/site/SQLite3/MisuseException/cdesc-MisuseException.yaml
+  /usr/share/ri/1.8/site/SQLite3/NotADatabaseException/cdesc-NotADatabaseException.yaml
+  /usr/share/ri/1.8/site/SQLite3/NotFoundException/cdesc-NotFoundException.yaml
+  /usr/share/ri/1.8/site/SQLite3/PermissionException/cdesc-PermissionException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/auto_vacuum%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/auto_vacuum-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/cache_size%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/cache_size-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/cdesc-Pragmas.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/database_list-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_cache_size%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_cache_size-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_synchronous%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_synchronous-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_temp_store%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/default_temp_store-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/foreign_key_list-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/full_column_names%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/full_column_names-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/index_info-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/index_list-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/integrity_check-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/parser_trace%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/parser_trace-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/schema_cookie%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/schema_cookie-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/synchronous%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/synchronous-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/table_info-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/temp_store%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/temp_store-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/user_cookie%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/user_cookie-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/vdbe_trace%3d-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Pragmas/vdbe_trace-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ProtocolException/cdesc-ProtocolException.yaml
+  /usr/share/ri/1.8/site/SQLite3/RangeException/cdesc-RangeException.yaml
+  /usr/share/ri/1.8/site/SQLite3/ReadOnlyException/cdesc-ReadOnlyException.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/ArrayWithTypes/cdesc-ArrayWithTypes.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/ArrayWithTypesAndFields/cdesc-ArrayWithTypesAndFields.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/HashWithTypes/cdesc-HashWithTypes.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/cdesc-ResultSet.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/close-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/closed%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/columns-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/each-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/eof%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/next-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/reset-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/ResultSet/types-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/SQLException/cdesc-SQLException.yaml
+  /usr/share/ri/1.8/site/SQLite3/SchemaChangedException/cdesc-SchemaChangedException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/active%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/bind_param-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/bind_params-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/cdesc-Statement.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/close-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/closed%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/columns-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/execute%21-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/execute-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/reset%21-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Statement/types-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/TooBigException/cdesc-TooBigException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Translator/add_translator-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Translator/cdesc-Translator.yaml
+  /usr/share/ri/1.8/site/SQLite3/Translator/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Translator/translate-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/UnsupportedException/cdesc-UnsupportedException.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/cdesc-Value.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/length-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/new-c.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/null%3f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/to_blob-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/to_f-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/to_i-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/to_int64-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/to_s-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Value/type-i.yaml
+  /usr/share/ri/1.8/site/SQLite3/Version/cdesc-Version.yaml
+  /usr/share/ri/1.8/site/SQLite3/cdesc-SQLite3.yaml
 
 ------------------
 
 Port Notes:
+
+----- version 1.2.4-1 -----
+Version bump.
 
 ----- version 1.2.1-1 -----
 Initial release for Cygwin.
