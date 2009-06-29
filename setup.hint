@@ -1,5 +1,5 @@
 category: Ruby Database
-requires: cygwin libsqlite3_0 ruby
+requires: libsqlite3_0 ruby
 sdesc: "Ruby bindings for SQLite3"
 ldesc: "This module allows Ruby programs to interface with the SQLite3 
 database engine (www.sqlite.org). You must have the SQLite engine 
