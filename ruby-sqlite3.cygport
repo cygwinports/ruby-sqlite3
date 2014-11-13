@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-sqlite3"
-VERSION=1.3.9
+VERSION=1.3.10
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby SQLite3 extension"
